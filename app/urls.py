@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.conf import settings
-from agenda.views import agenda_view
+from agenda.views import agenda_view,new_task_view
 
 """
 URL configuration for app project.
@@ -23,5 +23,6 @@ Including another URLconf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('agenda/', agenda_view),
+    path('', agenda_view, name='index'),
+    path('new_task',new_task_view, name='new_task'),
 ]

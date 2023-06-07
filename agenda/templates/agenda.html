@@ -9,7 +9,7 @@
     {% if compromisso %}
         <ul>
             {% for tarefa in compromisso %}
-                <li>{{ tarefa.descricao }}</li>
+                <li>{{tarefa.compromisso}} : <br>{{ tarefa.descricao }}</li>
             {% endfor %}
         </ul>
     {% else %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novo Cadastro</title>
+{% block content %}
+
+   
+</head>
+<body>
+  <form method="post" enctype="multpart/form-data">
+    {% csrf_token %}
+    <table>
+  {{ new_task_form.as_table}}
+    </table>
+
+  {% endblock  %}
+</body>
+</html>
